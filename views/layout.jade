@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
+    title= settings.title
     link(rel='stylesheet', href='/themes/#{settings.theme}/bootstrap.min.css')
     link(rel='stylesheet', href='/vendor/jqplot/jquery.jqplot.css')
     link(rel='stylesheet', href='//cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.css')
@@ -125,23 +125,23 @@ html
               if active == 'richlist'
                 li.active
                   a.navbar-link(href='/richlist')
-                    span.fa.fa-btc
+                    span.fa.fa-pie-chart
                     span.menu-text #{settings.locale.menu_richlist}
               else
                 li
                   a.navbar-link(href='/richlist')
-                    span.fa.fa-btc
+                    span.fa.fa-pie-chart
                     span.menu-text #{settings.locale.menu_richlist}
             if settings.display.nodes == true
               if active == 'nodes'
                 li.active
                   a.navbar-link(href='/nodes')
-                    span.fa.fa-map-pin
+                    span.fa.fa-wifi
                     span.menu-text #{settings.locale.menu_node}
               else
                 li
                   a.navbar-link(href='/nodes')
-                    span.fa.fa-map-pin
+                    span.fa.fa-wifi
                     span.menu-text #{settings.locale.menu_node}
             if settings.display.api == true
               if active == 'info'
@@ -220,7 +220,7 @@ html
         ul.nav
           li.text-center(style='margin-left:80px;margin-right:80px;')
             p(style='margin-top:15px;') 
-              a.navbar-link(href='https://github.com/rudy4682/explorer', target='_blank') BLOCKEXP.INFO
+              a.navbar-link(href='http://www.growcoin.pw', target='_blank') Growcoin.pw
       span.connections
         label#lblBlockcount.label.label-default -
         label#lblConnections.label.label-default -
