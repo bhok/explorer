@@ -40,6 +40,10 @@ Create user with read/write access:
 
     git clone https://github.com/iquidus/explorer explorer
 
+### Install kerberos   
+
+     apt-get install libkrb5-dev
+
 ### Install node modules
 
     cd explorer && npm install --production
